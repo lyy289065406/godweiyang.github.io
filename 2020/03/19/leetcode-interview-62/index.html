@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="每日算法系列【LeetCode 829】连续整数求和, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
+    <meta name="keywords" content="【每日算法Day 74】经典面试题：约瑟夫环，我敢打赌你一定不会最后一种方法！, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
@@ -12,14 +12,8 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-题目描述给定一个正整数 N ，试求有多少组连续正整数满足所有数字之和为 N ?
-示例1
-输入：
-5
-输出：
-2
-解释：
-5 = 5 = 2 + 3，共有两组连续整数([5],[2,3]">
+题目链接LeetCode 面试题62. 圆圈中最后剩下的数字
+题目描述$0,1,\ldots,n-1$ 这 $n$ 个数字排成一个圆圈，从数字 $0$ 开始，每次从这个圆圈里删除第 $">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -27,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>每日算法系列【LeetCode 829】连续整数求和 | 韦阳的博客</title>
+    <title>【每日算法Day 74】经典面试题：约瑟夫环，我敢打赌你一定不会最后一种方法！ | 韦阳的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -342,13 +336,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/25.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        每日算法系列【LeetCode 829】连续整数求和
+                        【每日算法Day 74】经典面试题：约瑟夫环，我敢打赌你一定不会最后一种方法！
                     </div>
                 </div>
             </div>
@@ -487,7 +481,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-21
+                    2020-03-19
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -501,14 +495,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    651
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    5 分
                 </div>
                 
                 
@@ -528,58 +522,89 @@
 <p>关注公众号【算法码上来】，每日算法干货马上就来！</p>
 </blockquote>
 <p><img src="/medias/contact.jpg" alt></p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个正整数 N ，试求有多少组连续正整数满足所有数字之和为 N ?</p>
+<h2 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h2><p><a href="https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/" title="LeetCode 面试题62. 圆圈中最后剩下的数字" target="_blank" rel="noopener">LeetCode 面试题62. 圆圈中最后剩下的数字</a></p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>$0,1,\ldots,n-1$ 这 $n$ 个数字排成一个圆圈，从数字 $0$ 开始，每次从这个圆圈里删除第 $m$ 个数字。求出这个圆圈里剩下的最后一个数字。</p>
+<p>例如，$0,1,2,3,4$ 这 $5$ 个数字组成一个圆圈，从数字 $0$ 开始每次删除第 $3$ 个数字，则删除的前 $4$ 个数字依次是 $2,0,4,1$，因此最后剩下的数字是 $3$。</p>
 <p><strong>示例1</strong></p>
 <pre class="line-numbers language-text"><code class="language-text">输入：
-5
+n = 5, m = 3
 输出：
-2
-解释：
-5 = 5 = 2 + 3，共有两组连续整数([5],[2,3])求和后为 5。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>示例2</strong></p>
 <pre class="line-numbers language-text"><code class="language-text">输入：
-9
+n = 10, m = 17
 输出：
-3
-解释：
-9 = 9 = 4 + 5 = 2 + 3 + 4<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>示例3</strong></p>
-<pre class="line-numbers language-text"><code class="language-text">输入：
-15
-输出：
-4
-解释：
-15 = 15 = 8 + 7 = 4 + 5 + 6 = 1 + 2 + 3 + 4 + 5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>提示</strong></p>
+2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>说明：</strong>   </p>
 <ul>
-<li>1 &lt;= N &lt;= 10^9</li>
+<li>$1 \le n \le 10^5$</li>
+<li>$1 \le m \le 10^6$</li>
 </ul>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这是一道非常经典的数学题，挺基础的，不知道为什么这也能算困难难度的题目？</p>
-<h3 id="暴力法"><a href="#暴力法" class="headerlink" title="暴力法"></a>暴力法</h3><p>遍历所有的连续数字区间 (i, j) ，然后求和看等不等于 N 。这种方法时间复杂度是 $O(n^2)$ ，显然不可行。</p>
-<h3 id="暴力法优化"><a href="#暴力法优化" class="headerlink" title="暴力法优化"></a>暴力法优化</h3><p>遍历所有的连续数字区间的左端点 i。然后假设区间长度为 n ，那么根据求和公式有 (2i+n-1)n/2=N ，然后只需要看这个方程的解是否是整数就行。时间复杂度可以降到 $O(n)$ ，但还是太高了。</p>
-<h3 id="数学方法"><a href="#数学方法" class="headerlink" title="数学方法"></a>数学方法</h3><p>根据上面的求和公式，对于起点 i 和长度 n ，求和得到 (2i+n-1)n/2=N 。我们可以先粗略推算一下 i 和 n 的范围，起点 i 的范围是 [1, N]毋庸置疑，而区间长度 n 的范围就可以考究一下了，一个出发点是：上面式子可以解出 i=(N-n(n-1)/2)/n ，而 i&gt;=1 ，可以解出 (n+1)n&lt;=2N ，所以 n 的范围其实只有根号 N 级别，可以直接遍历。另一个出发点是最小的 n 个数加起来就是 1 加到 n 等于 n(n+1)/2 ，这个要小于等于 N ，解出来也是 (n+1)n&lt;=2N 。</p>
-<p>所以我们只需要从 1 开始遍历 n ，直到 (n+1)n&gt;2N 为止，然后判断 (N-n(n-1)/2)/n 是否是整数就行了（前面终止条件可以保证 i 一定大于 0 ）。</p>
-<p>最终时间复杂度降到了 $O(\sqrt(N))$ 。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="数学方法（c-）"><a href="#数学方法（c-）" class="headerlink" title="数学方法（c++）"></a>数学方法（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><h3 id="循环链表"><a href="#循环链表" class="headerlink" title="循环链表"></a>循环链表</h3><p>用一个循环链表按顺序存储 $0$ 到 $n-1$ 中的数，然后每 $m$ 个数删除掉链表中的一个结点，最后剩下的数就是答案了。</p>
+<p>这种方法时间复杂度是 $O(nm)$ ，显然太高了，所以这里也不会给大家实现代码。</p>
+<h3 id="递推法"><a href="#递推法" class="headerlink" title="递推法"></a>递推法</h3><p>首先 $n$ 个人的编号依次是 $0,1,\ldots,n-1$ ，然后踢掉了编号为 $k = (m-1)\%n$ 的人，这时候剩下的人编号为 $0,1,\ldots,k-1,k+1, \ldots,n-1$ 。</p>
+<p>下一个踢掉的人就要从 $k+1$ 开始数了，所以我们把剩下的人编号从 $k+1$ 开始重新排个序，变成 $k+1, \ldots, n-1,0,\ldots,k-1$ 。这样编号又变成连续的了，而问题规模缩减成了 $n-1$ 个人。</p>
+<p>剩下的这 $n-1$ 个人的编号我们做一下映射，映射成 $0,1,\ldots,n-2$ ，这样就能递推下去求解了。映射的公式就是，映射后的编号为 $x$ ，那么映射之前的编号就是 $(x+k+1)\%n = (x+m)\%n$ 。</p>
+<p>也就是说，如果我们求出了 $n-1$ 个人最后剩下的人编号 $x$ ，那么 $n$ 个人最后剩下的人编号就是 $(x+m)\%n$ 。</p>
+<p>用 $f(n)$ 表示 $n$ 个人最后剩下的人编号，那么就有：<br>$$<br>f(n) = (f(n-1) + m) \% n<br>$$</p>
+<p>这样的话时间复杂度就降到了 $O(n)$ 。</p>
+<blockquote>
+<p>对于本题这个方法已经够用了，但是如果 $n$ 非常大，比如 $n \le 10^{12}$ ，但是 $m$ 不是很大，比如 $m \le 1000$ ，那么这时候这种方法就会超时了。具体的题目请自行百度 HDU 3089 。</p>
+</blockquote>
+<h3 id="递推法加速"><a href="#递推法加速" class="headerlink" title="递推法加速"></a>递推法加速</h3><p>注意观察上面的递推式 $f(n) = (f(n-1) + m) \% n$ ，如果 $m$ 很小，而 $n$ 很大的话，递推到后面要加很多次 $m$ 才会对 $n$ 求余。所以我们可以直接一下子加很多次 $m$ ，然后再求余，这样就能加速了。</p>
+<p>加了 $t$ 次 $m$ 之后，递推式变成了：<br>$$<br>f(n+t-1) = (f(n-1)+tm)\%(n+t-1)<br>$$</p>
+<p>假设加了 $t$ 次 $m$ 之后才产生了取余，那么就有 $f(n-1) + tm \ge n+t-1$ ，即 $t \ge \frac{n-f(n-1)-1}{m-1}$ 。所以每次都可以加 $\left\lceil \frac{n-f(n-1)-1}{m-1} \right\rceil$ 个 $m$ ，代码实现时用下取整，也就是 $\left\lfloor \frac{n-f(n-1)+m-3}{m-1} \right\rfloor$ 。</p>
+<p>此外还需要注意，如果发现 $i-1+t &gt; n$ ，也就是后面都不需要取余了，那么就直接一步加到底，退出循环得到答案。</p>
+<p>这个方法时间复杂度不是很好分析，但应该也是对数级别的。</p>
+<h3 id="数学法"><a href="#数学法" class="headerlink" title="数学法"></a>数学法</h3><p>这个方法在我之前的文章中已经讲过了：<br><a href="https://godweiyang.com/2018/04/16/concrete-math-8/" title="韦阳的博客：具体数学-第8课（取整进阶）">韦阳的博客：具体数学-第8课（取整进阶）</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/35820332" title="知乎专栏：具体数学-第8课（取整进阶）" target="_blank" rel="noopener">知乎专栏：具体数学-第8课（取整进阶）</a></p>
+<p>知乎高赞回答也整理过了一遍：<br><a href="https://www.zhihu.com/question/358255792/answer/974983270" title="世界上有哪些代码量很少，但很牛逼很经典的算法或项目案例？" target="_blank" rel="noopener">世界上有哪些代码量很少，但很牛逼很经典的算法或项目案例？</a></p>
+<p>大致思想也是重新编号，做编号映射，但是和上面递推法不同的是复杂度降到了对数级别。</p>
+<p>这里就不详细讲了，大家可以去看上面的文章，这里直接给出伪代码：</p>
+<pre class="line-numbers language-python"><code class="language-python">D <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token keyword">while</span> D <span class="token operator">&lt;=</span> <span class="token punctuation">(</span>m<span class="token number">-1</span><span class="token punctuation">)</span>n<span class="token punctuation">:</span>
+    D <span class="token operator">=</span> k
+ans <span class="token operator">=</span> mn<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>D<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>其中 $k = \left\lceil \frac{m}{m-1}D \right\rceil$ 。</p>
+<p>不过这个这里的编号是 $1$ 到 $n$ ，所以最后答案要减去 $1$ 。</p>
+<p>这种方法将时间复杂度降到了 $O(\log_{\frac{m}{m-1}}{(m-1)n})$ ，用对数换底公式后得到 $O(\frac{\ln{(m-1)}+\ln{(n)}}{\ln{(m)}-\ln{(m-1)}})$ 。</p>
+<p>可以看出，这种方法适用于 $n$ 特别大，但是 $m$ 特别小的情况。否则的话如果 $m$ 很大，分母会非常小，导致复杂度非常高。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="递推法（c-）"><a href="#递推法（c-）" class="headerlink" title="递推法（c++）"></a>递推法（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
-    <span class="token keyword">int</span> <span class="token function">consecutiveNumbersSum</span><span class="token punctuation">(</span><span class="token keyword">int</span> N<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> n <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token punctuation">(</span>n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> n <span class="token operator">&lt;=</span> <span class="token number">2</span> <span class="token operator">*</span> N<span class="token punctuation">;</span> <span class="token operator">++</span>n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>N <span class="token operator">-</span> n <span class="token operator">*</span> <span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">%</span> n <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> res<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> <span class="token function">lastRemaining</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">,</span> <span class="token keyword">int</span> m<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> last <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token punctuation">(</span>last <span class="token operator">+</span><span class="token operator">=</span> m<span class="token punctuation">)</span> <span class="token operator">%</span><span class="token operator">=</span> i<span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
-        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> last<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="数学方法（python）"><a href="#数学方法（python）" class="headerlink" title="数学方法（python）"></a>数学方法（python）</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">consecutiveNumbersSum</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> N<span class="token punctuation">:</span> int<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> int<span class="token punctuation">:</span>
-        res <span class="token operator">=</span> <span class="token number">0</span>
-        <span class="token keyword">for</span> n <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> N<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-            <span class="token keyword">if</span> n <span class="token operator">*</span> <span class="token punctuation">(</span>n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">2</span> <span class="token operator">*</span> N<span class="token punctuation">:</span>
-                <span class="token keyword">break</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>N <span class="token operator">-</span> n <span class="token operator">*</span> <span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">//</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">%</span> n <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
-                res <span class="token operator">+=</span> <span class="token number">1</span>
-        <span class="token keyword">return</span> res<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>这题还可以用质因数分解等方法进一步优化，但是没有必要。</p>
+<h3 id="递推法加速（c-）"><a href="#递推法加速（c-）" class="headerlink" title="递推法加速（c++）"></a>递推法加速（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">int</span> <span class="token function">lastRemaining</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">,</span> <span class="token keyword">int</span> m<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>m <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">return</span> n<span class="token number">-1</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> last <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> t <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">+</span><span class="token operator">=</span>t<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            t <span class="token operator">=</span> <span class="token punctuation">(</span>i<span class="token operator">-</span>last<span class="token operator">+</span>m<span class="token number">-3</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span>m<span class="token number">-1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>i<span class="token operator">+</span>t<span class="token number">-1</span> <span class="token operator">></span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                last <span class="token operator">+</span><span class="token operator">=</span> <span class="token punctuation">(</span>n<span class="token operator">-</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span>m<span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token punctuation">(</span>last <span class="token operator">+</span><span class="token operator">=</span> t<span class="token operator">*</span>m<span class="token punctuation">)</span> <span class="token operator">%</span><span class="token operator">=</span> <span class="token punctuation">(</span>i<span class="token operator">+</span>t<span class="token number">-1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> last<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="数学法（c-）"><a href="#数学法（c-）" class="headerlink" title="数学法（c++）"></a>数学法（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">int</span> <span class="token function">lastRemaining</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">,</span> <span class="token keyword">int</span> m<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">long</span> D <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> end <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">long</span><span class="token punctuation">)</span>n<span class="token operator">*</span><span class="token punctuation">(</span>m<span class="token number">-1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>D <span class="token operator">&lt;=</span> end<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            D <span class="token operator">=</span> <span class="token punctuation">(</span>m<span class="token operator">*</span>D<span class="token operator">+</span>m<span class="token number">-2</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span>m<span class="token number">-1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">long</span><span class="token punctuation">)</span>n<span class="token operator">*</span>m<span class="token operator">-</span>D<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr />
@@ -738,9 +763,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《每日算法系列【LeetCode 829】连续整数求和》
+                    《【每日算法Day 74】经典面试题：约瑟夫环，我敢打赌你一定不会最后一种方法！》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/01/21/leetcode-829/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/03/19/leetcode-interview-62/" property="cc:attributionName"
                rel="cc:attributionURL">
                 韦阳
             </a> 采用
@@ -781,7 +806,7 @@
         repo: 'godweiyang.github.io',
         owner: 'godweiyang',
         admin: "godweiyang",
-        id: '2020/01/21/leetcode-829/',
+        id: '2020/03/19/leetcode-interview-62/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1064,17 +1089,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/01/22/leetcode-881/">
+                <a href="/2020/03/19/leetcode-interview-62/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="每日算法系列【LeetCode 881】救生艇">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="【每日算法Day 74】经典面试题：约瑟夫环，我敢打赌你一定不会最后一种方法！">
                         
-                        <span class="card-title">每日算法系列【LeetCode 881】救生艇</span>
+                        <span class="card-title">【每日算法Day 74】经典面试题：约瑟夫环，我敢打赌你一定不会最后一种方法！</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1084,15 +1110,14 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-题目描述第 i 个人的体重为 people[i]，每艘船可以承载的最大重量为 limit。
-每艘船最多可同时载两人，但条件是这些人的重量之和最多为 limit。
-返回载到每一个人所需的
+题目链接LeetCode 面试题62. 圆圈中最后剩下的数字
+题目描述$0,1,\ldots,n-1$ 这 $n$ 个数字排成一个圆圈，从数字 $0$ 开始，每次从这个圆圈里删除第 $
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-22
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-19
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1105,6 +1130,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1127,13 +1153,13 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/01/20/leetcode-907/">
+                <a href="/2020/03/18/leetcode-99/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="每日算法系列【LeetCode 907】子数组的最小值之和">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="【每日算法Day 73】学妹大半夜私聊我有空吗，然后竟然做出这种事！">
                         
-                        <span class="card-title">每日算法系列【LeetCode 907】子数组的最小值之和</span>
+                        <span class="card-title">【每日算法Day 73】学妹大半夜私聊我有空吗，然后竟然做出这种事！</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1143,16 +1169,18 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-题目描述给定一个整数数组 A，找到 min(B) 的总和，其中 B 的范围为 A 的每个（连续）子数组。
-由于答案可能很大，因此返回答案模 10^9 + 7。
-示例1
-输入：
-[3,1
+
+竟然甩给我一道算法题做，太可恶了嘤嘤嘤。
+
+题目链接LeetCode 99. 恢复二叉搜索树
+题目描述二叉搜索树中的两个节点被错误地交换。
+请在不改变其结构的情况下，恢复这棵树。
+示
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-20
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-18
                             </span>
                         <span class="publish-author">
                             
