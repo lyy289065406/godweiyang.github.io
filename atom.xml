@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-03-24T08:57:19.481Z</updated>
+  <updated>2020-03-26T04:38:46.414Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【每日算法Day 81】面试经典题：关于丑数，你真的理解为什么这么做吗？</title>
+    <link href="https://godweiyang.com/2020/03/26/leetcode-inteview-17-09/"/>
+    <id>https://godweiyang.com/2020/03/26/leetcode-inteview-17-09/</id>
+    <published>2020-03-26T03:37:32.000Z</published>
+    <updated>2020-03-26T04:38:46.414Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>【每日算法Day 80】所有人都会做的入门题，高级解法来了！</title>
@@ -596,38 +628,6 @@
     <id>https://godweiyang.com/2020/03/07/leetcode-815/</id>
     <published>2020-03-07T10:13:29.000Z</published>
     <updated>2020-03-07T07:42:06.902Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【每日算法Day 61】LeetCode 672. 灯泡开关 Ⅱ</title>
-    <link href="https://godweiyang.com/2020/03/06/leetcode-672/"/>
-    <id>https://godweiyang.com/2020/03/06/leetcode-672/</id>
-    <published>2020-03-06T10:13:29.000Z</published>
-    <updated>2020-03-06T06:00:27.873Z</updated>
     
     <summary type="html">
     
