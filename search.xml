@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title>【每日算法Day 81】面试经典题：关于丑数，你真的理解为什么这么做吗？</title>
+      <title>【每日算法Day 81】面试经典题：关于丑数，你真的理解为什么这么算吗？</title>
       <link href="/2020/03/26/leetcode-inteview-17-09/"/>
       <url>/2020/03/26/leetcode-inteview-17-09/</url>
       
@@ -3677,9 +3677,9 @@
             
             <tag> 博客 </tag>
             
-            <tag> github </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> github </tag>
             
         </tags>
       
