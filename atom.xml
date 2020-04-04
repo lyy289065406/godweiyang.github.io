@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-04-03T05:12:52.082Z</updated>
+  <updated>2020-04-04T08:19:25.292Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【每日算法Day 90】5种方法：求解数组中出现次数超过一半的那个数</title>
+    <link href="https://godweiyang.com/2020/04/04/leetcode-inteview-39/"/>
+    <id>https://godweiyang.com/2020/04/04/leetcode-inteview-39/</id>
+    <published>2020-04-04T06:39:28.000Z</published>
+    <updated>2020-04-04T08:19:25.292Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;1.jpg&quot; alt=&quot;论文中了，非常感谢各位的支持！&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot; class=&quot;headerlink&quot; title=&quot;题目链接&quot;&gt;&lt;/a&gt;题目链接&lt;/h2&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>【每日算法Day 89】手动实现字符串转整数（atoi）函数，你会吗？</title>
@@ -589,38 +618,6 @@
     <id>https://godweiyang.com/2020/03/16/leetcode-interview-17-19/</id>
     <published>2020-03-16T03:34:30.000Z</published>
     <updated>2020-03-17T04:00:19.518Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【每日算法Day 70】图解算法：小学生都会的数块数问题，你会吗？</title>
-    <link href="https://godweiyang.com/2020/03/15/leetcode-959/"/>
-    <id>https://godweiyang.com/2020/03/15/leetcode-959/</id>
-    <published>2020-03-15T08:03:12.000Z</published>
-    <updated>2020-03-15T10:59:26.302Z</updated>
     
     <summary type="html">
     
