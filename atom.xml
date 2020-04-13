@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-04-12T13:21:56.818Z</updated>
+  <updated>2020-04-13T06:16:18.574Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【每日算法Day 99】你们可能不知道只用20万赢到578万是什么概念</title>
+    <link href="https://godweiyang.com/2020/04/13/leetcode-846/"/>
+    <id>https://godweiyang.com/2020/04/13/leetcode-846/</id>
+    <published>2020-04-13T04:23:00.000Z</published>
+    <updated>2020-04-13T06:16:18.574Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;你们可能不知道只用 20 万赢到 578 万是什么概念。&lt;br&gt;我们一般只会用两个字来形容这种人：赌怪！&lt;br&gt;我经常说一句话，当年陈刀仔他能用 20 块赢到 3700 万，我 LBW 用 20 万赢到 500
+        
+      
+    
+    </summary>
+    
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>【每日算法Day 98】慈善赌神godweiyang教你算骰子点数概率！</title>
@@ -580,37 +609,6 @@
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
 &lt;h2 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【每日算法Day 80】所有人都会做的入门题，高级解法来了！</title>
-    <link href="https://godweiyang.com/2020/03/25/leetcode-inteview-08-31-v2/"/>
-    <id>https://godweiyang.com/2020/03/25/leetcode-inteview-08-31-v2/</id>
-    <published>2020-03-25T02:55:55.000Z</published>
-    <updated>2020-03-24T08:57:19.481Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot;
         
       
     
