@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>【每日算法Day 104】偷电瓶的周某今天放出来了，还不赶紧做这道题防范一下！</title>
+      <link href="/2020/04/18/leetcode-198/"/>
+      <url>/2020/04/18/leetcode-198/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>偷电瓶的周某今天（2020.04.18）出来啦，打工是不可能打工的，这辈子都不可能打工的，大家可要小心咯。<br>今天开始讲解 LeetCode <strong>打家劫舍</strong>系列三道题目，给大家防范一下！</p></blockquote><h2 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h2><p><a href="https://leetcode-cn.com/problems/house-robber/" title="LeetCode 198. 打家劫舍" target="_blank" rel="noopener">LeetCode 198. 打家劫舍</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote><p>题面描述略有改动，不影响题意。</p></blockquote><p>你是一个专业的小偷，计划偷窃沿路的电瓶车电瓶。每个电瓶价值不一样，影响你偷窃的唯一制约因素就是相邻的电瓶车装有相互连通的防盗系统，如果两辆相邻的电瓶车的电瓶同时被偷，系统会自动报警。</p><p>给定一个代表每辆电瓶车电瓶价值的非负整数数组，计算你在不触动警报装置的情况下，能够偷窃到的最高金额。</p><p><strong>示例1</strong></p><pre class="line-numbers language-text"><code class="language-text">输入：[1,2,3,1]输出:4<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p><strong>示例2</strong></p><pre class="line-numbers language-text"><code class="language-text">输入：[2,7,9,3,1]输出:12<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>用 $dp[i]$ 表示偷前 $i$ 辆车电瓶可以获得的最大价值，那么对于第 $i$ 辆车来说，有两种选择。</p><p>如果偷第 $i$ 辆车的电瓶，那么第 $i-1$ 辆车电瓶就不能偷了，能获得的最大价值就是 $dp[i-2] + p[i]$ 。</p><p>如果不偷第 $i$ 辆车的电瓶，那么最大价值就等价于偷前 $i-1$ 辆车的电瓶能获得的最大价值 $dp[i-1]$ 。</p><p>所以最终取两者最大值即可：<br>$$<br>dp[i] = \max{\{dp[i-1], dp[i-2]+p[i]\}}<br>$$</p><p>可以发现，每次计算其实只要用到前两个元素，所以每次维护最后两个值即可，可以将空间优化到常数空间。</p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="c"><a href="#c" class="headerlink" title="c++"></a>c++</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span><span class="token keyword">public</span><span class="token operator">:</span>    <span class="token keyword">int</span> <span class="token function">rob</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">int</span> n <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">int</span> prepre <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> pre <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> now <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>            now <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>pre<span class="token punctuation">,</span> prepre<span class="token operator">+</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            prepre <span class="token operator">=</span> pre<span class="token punctuation">;</span>            pre <span class="token operator">=</span> now<span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token keyword">return</span> now<span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>关注公众号【算法码上来】，每日算法干货马上就来！<br><img src="/medias/contact.jpg" alt></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【每日算法Day 103】老题新做，几乎不会有人想到的解法，它来了</title>
       <link href="/2020/04/17/leetcode-846-v2/"/>
       <url>/2020/04/17/leetcode-846-v2/</url>
@@ -4298,9 +4325,9 @@
             
             <tag> 博客 </tag>
             
-            <tag> hexo </tag>
-            
             <tag> github </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
