@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-04-20T03:15:46.463Z</updated>
+  <updated>2020-04-21T04:58:46.236Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【每日算法Day 107】面试必考：良心推荐，一题三解，不看后悔一辈子</title>
+    <link href="https://godweiyang.com/2020/04/21/leetcode-1248/"/>
+    <id>https://godweiyang.com/2020/04/21/leetcode-1248/</id>
+    <published>2020-04-21T03:14:02.000Z</published>
+    <updated>2020-04-21T04:58:46.236Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;可能有些同学只会写 &lt;code&gt;python&lt;/code&gt; ，看不懂 &lt;code&gt;c++&lt;/code&gt;。但是一个是因为我懒，多解时不想再写一遍 &lt;code&gt;python&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>【每日算法Day 106】打家劫舍系列最后一弹，撑住你就赢了！</title>
@@ -562,35 +591,6 @@
         
         
           &lt;p&gt;&lt;img src=&quot;1.jpg&quot; alt=&quot;还有几个小时ACL2020就出结果了，祈祷！&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot; class=&quot;headerlink&quot; title=&quot;题目链接&quot;&gt;&lt;/a&gt;题目链接&lt;/h2&gt;&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【每日算法Day 88】超越妹妹教你如何做这道排序题</title>
-    <link href="https://godweiyang.com/2020/04/02/leetcode-inteview-16-16/"/>
-    <id>https://godweiyang.com/2020/04/02/leetcode-inteview-16-16/</id>
-    <published>2020-04-01T16:48:56.000Z</published>
-    <updated>2020-04-03T04:31:11.310Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;1.jpg&quot; alt=&quot;每日一图：我老婆可爱不？&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot; class=&quot;headerlink&quot; title=&quot;题目链接&quot;&gt;&lt;/a&gt;题目链接&lt;/h2&gt;&lt;p&gt;&lt;a
         
       
