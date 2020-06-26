@@ -540,7 +540,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         },
         xAxis: {
             type: 'category',
-            data: ["2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04"]
+            data: ["2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06"]
         },
         yAxis: {
             type: 'value',
@@ -550,7 +550,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [1,0,0,3,3,0,0,0,4,33,30,33,26],
+                data: [0,3,3,0,0,0,4,33,30,33,26,0,0],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -616,7 +616,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         xAxis: [
             {
                 type: 'category',
-                data: ["算法","leetcode","NLP","句法分析","具体数学","ACL","序列标注","EMNLP","NAACL","迁移学习"]
+                data: ["算法","leetcode","NLP","句法分析","具体数学","ACL","EMNLP","序列标注","NAACL","迁移学习"]
             }
         ],
         yAxis: [
@@ -825,12 +825,6 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             
             
-            <a href="/tags/博客/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">博客</span>
-            </a>
-            
-            
-            
             <a href="/tags/ACL/" target="_blank">
                 <span class="chip center-align waves-effect waves-light chip-default">ACL</span>
             </a>
@@ -845,6 +839,12 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <a href="/tags/序列标注/" target="_blank">
                 <span class="chip center-align waves-effect waves-light chip-default">序列标注</span>
+            </a>
+            
+            
+            
+            <a href="/tags/博客/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">博客</span>
             </a>
             
             
@@ -885,14 +885,14 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             
             
-            <a href="/tags/EACL/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">EACL</span>
+            <a href="/tags/NAACL/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">NAACL</span>
             </a>
             
             
             
-            <a href="/tags/NAACL/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">NAACL</span>
+            <a href="/tags/EACL/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">EACL</span>
             </a>
             
             
@@ -969,14 +969,14 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             
             
-            <a href="/tags/Transformer/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">Transformer</span>
+            <a href="/tags/语言模型/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">语言模型</span>
             </a>
             
             
             
-            <a href="/tags/语言模型/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">语言模型</span>
+            <a href="/tags/Transformer/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">Transformer</span>
             </a>
             
             
@@ -1023,6 +1023,18 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             
             
+            <a href="/tags/python/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">python</span>
+            </a>
+            
+            
+            
+            <a href="/tags/经验总结/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">经验总结</span>
+            </a>
+            
+            
+            
             <a href="/tags/cuda/" target="_blank">
                 <span class="chip center-align waves-effect waves-light chip-default">cuda</span>
             </a>
@@ -1035,24 +1047,6 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             
             
-            <a href="/tags/经验总结/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">经验总结</span>
-            </a>
-            
-            
-            
-            <a href="/tags/python/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">python</span>
-            </a>
-            
-            
-            
-            <a href="/tags/软件/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">软件</span>
-            </a>
-            
-            
-            
             <a href="/tags/sublime/" target="_blank">
                 <span class="chip center-align waves-effect waves-light chip-default">sublime</span>
             </a>
@@ -1061,6 +1055,12 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <a href="/tags/面试/" target="_blank">
                 <span class="chip center-align waves-effect waves-light chip-default">面试</span>
+            </a>
+            
+            
+            
+            <a href="/tags/软件/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">软件</span>
             </a>
             
             
@@ -1107,10 +1107,13 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                         <div id="articleContent" data-aos="fade-up">
                             <h2 id="CV"><a href="#CV" class="headerlink" title="CV"></a>CV</h2><p><a href="/medias/files/cv-zh.pdf">中文版</a><br><a href="/medias/files/cv-en.pdf">English Version</a></p>
 <h2 id="教育背景"><a href="#教育背景" class="headerlink" title="教育背景"></a>教育背景</h2><ul>
-<li><b>硕士 华东师范大学 计算机科学与技术</b><br>2018/06 - 现在</li>
+<li><b>硕士 华东师范大学 计算机科学与技术</b><br>2018/06 - 至今</li>
 <li><b>本科 华东师范大学 计算机科学与技术</b><br>2014/09 - 2018/06<br><em>综合排名专业第一</em></li>
 </ul>
 <h3 id="研究方向"><a href="#研究方向" class="headerlink" title="研究方向"></a>研究方向</h3><p>主要研究<strong>成分句法分析、依存句法分析、序列标注、语言模型</strong>等基础算法工作，<br>对<strong>机器翻译、实体关系抽取、迁移学习</strong>等下游应用也有了解。</p>
+<h3 id="实习经历"><a href="#实习经历" class="headerlink" title="实习经历"></a>实习经历</h3><ul>
+<li><b>字节跳动AI Lab NLP算法工程师</b><br>2020/05 - 至今<br>主要负责机器翻译模型的压缩与加速，利用参数共享、矩阵分解、量化、蒸馏等模型压缩技术，减小模型的体积，最终应用到移动终端上去。</li>
+</ul>
 <h3 id="学术成果"><a href="#学术成果" class="headerlink" title="学术成果"></a>学术成果</h3><ul>
 <li><strong>A Span-based Linearization for Constituent Trees</strong><br><em>Yang Wei, Yuanbin Wu and Man Lan</em>， <strong>ACL 2020</strong><br>提出了一种成分句法树的线性化表示方法。<br>和以往的线性化表示方法相比，该表示和span关联更加密切，可解释性更好。<br>和CKY算法相比，该方法时间复杂度更低，并且更加利于并行计算。<br>同时该方法可以达到目前的最佳性能。</li>
 </ul>
@@ -1132,8 +1135,9 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 <li><b>铜牌</b><br>ACM-ICPC上海大都会赛</li>
 </ul>
 <h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><ul>
-<li><b>电子邮箱</b><br><a href="mailto:godweiyang@gmail.com" target="_blank" rel="noopener">godweiyang@gmail.com</a><br><a href="mailto:i@godweiyang.com">i@godweiyang.com</a><br><a href="mailto:792321264@qq.com" target="_blank" rel="noopener">792321264@qq.com</a></li>
+<li><b>电子邮箱</b><br><a href="mailto:godweiyang@gmail.com" target="_blank" rel="noopener">godweiyang@gmail.com</a><br><a href="mailto:792321264@qq.com" target="_blank" rel="noopener">792321264@qq.com</a></li>
 <li><b>地址</b><br>上海市普陀区中山北路3663号理科大楼B906，邮编200062</li>
+<li><b>微信</b><br>godweiyang</li>
 <li><b>QQ 技术交流群</b><br>864832264</li>
 </ul>
 <p><img src="/medias/contact.jpg" alt></p>
